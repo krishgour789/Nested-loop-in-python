@@ -52,5 +52,39 @@
 # b = [i for i in a if i%2!=0]
 # print(b)
 
-a = [i for i in range(1,51) if i%a!=0 for a in range(1,51-1) if i%a==0]
-print(a)
+# a = [i for i in range(1,51) if i%a!=0 for a in range(1,51-1) if i%a==0]
+# print(a)
+
+# a=["krish",123,12.37,True]
+# print(type(a[-1]))
+
+
+
+# a=int(input("Enter Your Number"))
+# b=int(input("Enter Your Number"))
+# if a==b:
+#     print("yes it is equal")
+# else:
+#     print("not equal")
+
+# n = int(input("Enter a table = "))
+# for i in range(1,11):
+#     print(n,"x",i,"=",n*i)
+
+# 
+# while True:
+#     n = int(input("Enter a number :"))
+#     if n>10:
+#         print("type big")
+#         break
+#     else:
+#         print("plz type greater than 10")
+
+
+# n = 100
+# for i in range(1,n+1):
+#     print(i,end=",")
+
+# for i in range(start,end,step)
+# for i in range(1,20,2):
+#     print(i)
