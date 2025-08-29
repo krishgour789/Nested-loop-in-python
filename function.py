@@ -191,11 +191,101 @@
 #     li.append(i)
 # print(li)
 
-li = [i for i in range(1,11)]
-print(li)
+# li = [i for i in range(1,11)]
+# print(li)
 
 # positional argument
 # 1 key word argument
 # 2 defaukt argument
 # 3 variable length argument
 # 4 key word variable length arguent
+
+
+# Hof (high Order Functions)
+
+# def square(x):
+#     return x*x
+# def apply(func,value):
+#     return func(value)
+# print(apply(square,5))
+
+
+# Built in Hofs
+
+
+# using of map >>><<<<<
+# a = [1,2,3,4,5]
+# square = list(map(lambda x:x*x,a))
+# print(square)
+
+
+# using of filter functions 
+
+# a = [1,2,3,4,5,6,7,8,9,10]
+# even = list(filter(lambda x:x%2==0,a)) # it can only print matching condition
+# print(even)
+
+
+
+
+# types of arguments
+# 1 key-word argument
+# 2 default argument 
+# 3 variable length argument
+# 4 key-word variable length argument 
+
+# 1 key-word argument
+
+# def studentdata(name,rollno):
+#     print(f"Welcome {name} your rollno is {rollno} ")
+
+# studentdata(rollno=100,name="raj")
+
+# # 2 default argument 
+
+# def addition(a=0,b=0):
+#     print(a+b)
+
+# addition(8)
+
+
+# def function(name,rollno):
+#     print(f"your name {name} and your rollno is {rollno}")
+# function("Krish",101)
+
+# def sum(a=0,b=0):
+#     if a!=0 and b!=0:
+#         print(a+b)
+#     else:
+#         print(a*b)
+    
+# sum(0,3)
+
+# with the help of high order function we can make capital and small
+# a = ["upper","pYTHon"]
+# upper_case = list(map(str.upper,a))
+# lower_case = list(map(str.lower,a))
+# print(lower_case)
+# print(upper_case)
+
+# from functools import reduce
+# a = [2,3,4]
+# products_a=reduce(lambda x,y:x*y,a )
+# print(products_a)
+
+
+# import calendar
+# yy = 2025
+# mm =8
+# print(calendar.month(yy,mm))
+
+def prime_number(n):
+    if n<2:
+        return 0
+    else:
+        for i in range(3,n-1):
+            if i%n==0:
+                return False
+            return True
+            
+print(prime_number(4))
