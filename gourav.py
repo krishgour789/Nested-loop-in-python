@@ -9,7 +9,14 @@
 #         print(i,end=",")
 
 
-n = input("NAME")
-print("hello"+ n)
+# n = input("NAME")
+# print("hello"+ n)
+# n = 5
+# for i in range(1,n+1):
+#     print("*"*i)
+    
 
+n = 5
+for i in range(1,n+1):
+    print(" "*(n-i),"* "*i)
     
